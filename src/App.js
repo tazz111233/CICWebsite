@@ -55,7 +55,7 @@ function App() {
         </div>
 
         <h2 className="header-subtitle">Shape your<br />future with us</h2>
-        <img src={coding} alt="Coding" className="logoimg" />
+        <img src={coding} alt="Coding" className="logoimg"  />
       </header>
 
       <main className="App-content">

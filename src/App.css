@@ -209,6 +209,7 @@ body {
   transform: translate(-50%, -50%);
   width: 70;
   height: 70%;
+  
 }
 .signup-button {
   position: absolute;
@@ -474,11 +475,18 @@ body {
   }
 }
 
+
+
+
 @media (max-width: 480px) {
     body{
       margin: 0;
       padding: 0;
     }
+  .logoimg {
+      width: 100px !important; /* Force width change */
+      height: auto !important; /* Maintain aspect ratio */
+  }
     .header-title {
         font-size: 30px;
         top: 10px;
