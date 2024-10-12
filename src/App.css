@@ -7,6 +7,10 @@
 
 body {
   font-family: 'CustomFont', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -471,6 +475,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    body{
+      margin: 0;
+      padding: 0;
+    }
     .header-title {
         font-size: 30px;
         top: 10px;
