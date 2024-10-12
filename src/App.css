@@ -4,12 +4,17 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html {
+  overflow-x: hidden;
+  
+  
+  
+}
 body {
   font-family: 'CustomFont', sans-serif;
-  width: 100%;
+  width: 100%; 
   overflow-x: hidden;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
@@ -183,6 +188,7 @@ body {
 .App-footer {
   position: relative;
   background-color: white;
+  
 }
 
 .App-footer::before {
@@ -483,10 +489,7 @@ body {
       margin: 0;
       padding: 0;
     }
-  .logoimg {
-      width: 100px !important; /* Force width change */
-      height: auto !important; /* Maintain aspect ratio */
-  }
+  
     .header-title {
         font-size: 30px;
         top: 10px;
@@ -580,10 +583,11 @@ body {
     .social-icons {
         gap: 15px;
         top: 75%; /* Remove the top positioning */
-        left: 33%;
+        left: 35% !important;
         transform: translateX(-50%); /* Center horizontally */
         position: absolute;
          /* Add space between signup button and social icons */
+        
     }
 
     .signup-button {
