@@ -88,6 +88,48 @@ body {
   text-align: left;
   white-space: nowrap;
 }
+#reg {
+  position: relative;
+}
+#reg button {
+  transform: translateX(-50%);
+  position: absolute;
+  background: #39ff14; /* Neon green */
+  border: 5px solid #39ff14; /* Neon green border */
+  color: white;
+  padding: 25px 50px; /* Increased padding for a bigger button */
+  font-size: 24px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  left: 80%;
+  top: 35%;
+  box-shadow: 0 0 40px #39ff14, 0 0 80px #39ff14, 0 0 120px #39ff14;
+  animation: neon-glow 0.7s infinite alternate; /* Faster pulsating */
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14, 0 0 50px #39ff14;
+  }
+  50% {
+    box-shadow: 0 0 60px #39ff14, 0 0 120px #39ff14, 0 0 180px #39ff14;
+  }
+  100% {
+    box-shadow: 0 0 80px #39ff14, 0 0 160px #39ff14, 0 0 240px #39ff14;
+  }
+}
+
+#reg button:hover {
+  animation: none; /* Stop the animation on hover */
+  box-shadow: 0 0 80px #39ff14, 0 0 160px #39ff14, 0 0 240px #39ff14; /* Maintain the max glow on hover */
+}
+
+
+
+
+
 
 .App-content {
   min-height: 400px;
@@ -339,6 +381,15 @@ body {
     animation-iteration-count: infinite;
   }
 
+  #reg button {
+    padding: 20px 35px; /* Reduce padding for smaller size */
+    font-size: 16px; /* Decrease font size */
+    border: 3px solid #39ff14; /* Adjust border size */
+    top: 35%; /* Adjust positioning to fit smaller screens */
+    left: 72%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the button on smaller screens */
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 60px #39ff14; /* Reduce shadow size */
+  }
   .header-title {
     font-size: 75px;
     top: 15px;
@@ -392,6 +443,15 @@ body {
   #menu:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+  }
+  #reg button {
+    padding: 20px 35px; /* Reduce padding for smaller size */
+    font-size: 16px; /* Decrease font size */
+    border: 3px solid #39ff14; /* Adjust border size */
+    top: 30%; /* Adjust positioning to fit smaller screens */
+    left: 72%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the button on smaller screens */
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 60px #39ff14; /* Reduce shadow size */
   }
   .dropdown-btn {
     padding: 5px 10px;
@@ -575,6 +635,18 @@ body {
     }
     .footer-title{
       top: 20%;
+    }
+    #reg button {
+      padding: 10px 20px; /* Reduce padding for smaller size */
+      font-size: 16px; /* Decrease font size */
+      border: 3px solid #39ff14; /* Adjust border size */
+      top: 35%; /* Adjust positioning to fit smaller screens */
+      left: 72%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the button on smaller screens */
+      box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14, 0 0 60px #39ff14; /* Reduce shadow size */
+    }
+    #reg {
+      margin-bottom: -60px;
     }
     
 

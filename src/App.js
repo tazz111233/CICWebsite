@@ -11,6 +11,8 @@ import partners from './partners.jpg';
 import team from './OurTeam.jpg';
 import advisory1 from './advisory1.jpg';
 import advisory2 from './advisory2.jpg';
+import registration from './registration.png';
+import congrats from './class23.jpg';
 import { FaInstagram, FaYoutube, FaFacebookF, FaTwitter, FaLinkedinIn, FaBars } from 'react-icons/fa';
 
 function App() {
@@ -56,15 +58,24 @@ function App() {
 
         <h2 className="header-subtitle">Shape your<br />future with us</h2>
         <img src={coding} alt="Coding" className="logoimg"  />
+        
       </header>
 
       <main className="App-content">
-        <section id="who" className="section">
-          <img src={who} alt="Who we are" className="section-image" />
+      <section id="reg" className="section">
+          <img src={registration} alt="registration open" className="section-image" />
+          <button onClick={() => window.location.href = 'https://forms.gle/fyoEggb6ksTGe7wZ8'}>JOIN US</button>
+        </section>
+        <section id="class23" className="section">
+          <img src={congrats} alt="congratulations" className="section-image" />
         </section>
         <section id="program" className="section">
           <img src={PartnersImage} alt="Our Program" className="section-image" />
         </section>
+        <section id="who" className="section">
+          <img src={who} alt="Who we are" className="section-image" />
+        </section>
+       
         <section id="partners" className="section">
           <img src={partners} alt="Our Partners" className="section-image" />
         </section>
@@ -100,7 +111,7 @@ function App() {
       <footer id="footer" className="App-footer">
         <img src={Banner} alt="Footer Gradient" className="footer-image" />
         <h1 className="footer-title">Let's connect</h1>
-        <button className="signup-button" onClick={() => window.location.href = "https://docs.google.com/forms/d/14Cq1mWess8gFws-mCrldQj2u0sIH67yieu4tSkumrmU/edit"}>SIGN UP NOW</button>
+        <button className="signup-button" onClick={() => window.location.href = "https://forms.gle/fyoEggb6ksTGe7wZ8"}>SIGN UP NOW</button>
 
         <div className="social-icons">
           <a href="https://www.instagram.com/codingincolour?igsh=MW9jNG42bzY2c3M2aQ==" target="_blank" rel="noopener noreferrer">
