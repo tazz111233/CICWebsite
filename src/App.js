@@ -64,7 +64,7 @@ function App() {
       <main className="App-content">
       <section id="reg" className="section">
           <img src={registration} alt="registration open" className="section-image" />
-          <button onClick={() => window.location.href = 'https://forms.gle/fyoEggb6ksTGe7wZ8'}>JOIN US</button>
+          <button onClick={() => window.location.href = 'https://forms.gle/fyoEggb6ksTGe7wZ8'}>SIGN UP</button>
         </section>
         <section id="class23" className="section">
           <img src={congrats} alt="congratulations" className="section-image" />

@@ -96,7 +96,7 @@ body {
   position: absolute;
   background: #39ff14; /* Neon green */
   border: 5px solid #39ff14; /* Neon green border */
-  color: white;
+  color: black;
   padding: 25px 50px; /* Increased padding for a bigger button */
   font-size: 24px; /* Larger font size */
   font-weight: bold; /* Bold text */
